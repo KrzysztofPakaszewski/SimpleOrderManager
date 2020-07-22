@@ -97,7 +97,7 @@ public class OrderResource {
      * @param id the id of the order to delete
      * @return {@link ResponseEntity}
      *              with status {@code 200 (ok)} if order was deleted
-     *              with status {@code 400 (ok)} if order does not exists
+     *              with status {@code 400 (bad_request)} if order does not exists
      */
     @DeleteMapping("/order/{id}")
     public ResponseEntity deleteOrder(@PathVariable Long id){
